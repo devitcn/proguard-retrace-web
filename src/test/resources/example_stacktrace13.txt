@@ -1,0 +1,11 @@
+java.lang.RuntimeException
+  at cn.devit.demo.a.b.a(UserService.java:11)
+  at cn.devit.demo.Application.main(Application.java:16)
+  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+  at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+  at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+  at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52)

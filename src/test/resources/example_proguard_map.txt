@@ -1,0 +1,12 @@
+cn.devit.demo.Application -> cn.devit.demo.Application:
+    10:10:void <init>() -> <init>
+    13:18:void main(java.lang.String[]) -> main
+cn.devit.demo.api.User -> cn.devit.demo.a.a:
+    java.lang.String username -> a
+    6:6:void <init>() -> <init>
+    7:7:java.lang.String toString() -> toString
+    1009:1009:java.lang.String getUsername():9:9 -> toString
+    1009:1009:java.lang.String toString():7 -> toString
+cn.devit.demo.api.UserService -> cn.devit.demo.a.b:
+    6:6:void <init>() -> <init>
+    9:13:cn.devit.demo.api.User getUser$66e38833() -> a

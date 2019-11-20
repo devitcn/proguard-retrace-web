@@ -1,0 +1,140 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Proguard Retrace</title>
+<meta name="description" content="proguard retrace online" />
+
+<script type="text/javascript" src="install.js"></script>
+
+<!-- mono font -->
+<script src="//use.typekit.net/iky7gec.js"></script>
+<script>
+    try {
+        Typekit.load();
+    } catch (e) {
+    }
+</script>
+<style type="text/css">
+html, body {
+	height: 100%;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+}
+
+.main {
+	flex-grow: 1;
+	overflow: hidden;
+}
+
+.row1 {
+	display: flex;
+	flex-flow: row;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 34px;
+	background-color: #f5f5f5;
+}
+
+footer {
+	border-top: 1px solid black;
+}
+
+.github-btn {
+	overflow: hidden;
+	border: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.modal-dialog-bg {
+	z-index: 99;
+}
+
+.modal-dialog {
+	z-index: 100;
+}
+
+p {
+	font-size: 9pt;
+}
+</style>
+
+</head>
+
+<body id="index">
+  <div class="container" id="main1">
+   <form>
+    <div class="row">
+      <h1>Proguard Retrace</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <fieldset>
+          <legend>mapping</legend>
+          <!-- <div class="form-group">
+            <label>粘贴mapping内容</label>
+            <textarea name="mapping" class="form-control" rows="6"></textarea>
+          </div> -->
+          <div class="form-group">
+            <label for="ff1">上传mapping文件</label> <input type="file"
+              name="mapping_file">
+            <p class="help-block">proguard_map.txt</p>
+          </div>
+
+        </fieldset>
+        <fieldset>
+          <legend>stacktrace</legend>
+          <div class="form-group">
+            <label>粘贴stacktrace内容</label>
+            <textarea name="stacktrace" class="form-control" rows="6"></textarea>
+          </div>
+          <!-- <div class="form-group">
+            <label>直接上传文件</label> <input type="file"
+              name="stracktrace_file">
+            <p class="help-block">stacktrace.txt</p>
+          </div> -->
+        </fieldset>
+        <button type="button" class="btn btn-primary" id="submit">开始</button>
+      </div>
+      <div class="col-md-8">
+        <h2>结果</h2>
+        <div><pre id="transcoded"></pre></div>
+      </div>
+    </div>
+    <div class="row">
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+     </div>
+   </form>
+  </div>
+  <footer class="footer">
+    <div class="container-fluid">
+      <p style="line-height: 30px; margin: 0">
+        Powerd by : <a href="http://plantuml.com/" target="_blank">
+          Proguard</a>, <a href="https://orionhub.org/" target="_blank">Bootstrap</a>.
+        Author: Alex. Version : ${project.version}-${timestamp}
+        <iframe class="github-btn" style=""
+          src="https://ghbtns.com/github-btn.html?user=devitcn&amp;repo=proguard-retrace-web&amp;type=fork&amp;count=true"
+          width="102" height="20" title="Fork on GitHub"></iframe>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
